@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/html5reset.css"/>
+  <link href="dist/css/lightbox.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
   
   <title>Playlists</title>
 </head>
@@ -18,25 +20,34 @@
             <li><a class="active" href = "playlists.html">Playlists</a></li>
         </ul>
     </nav>
-    <div class = "body-text"><h1> This is About Me Page!</h1></div>
+    <div class = "body-text"><h1> My Playlists</h1></div>
+
+    <div class = "sub-text"><h3> I create... </h3></div>
+
 
     <!-- <div class="playlist1" id="one">
         <img src="../images/playlist1.jpg" alt="first pllaylist"/>
       </div> -->
 
     <div class ="playlist_gallery">
-        <img src = "images/playlist1.png" alt = "first playlist">
-        <img src = "images/playlist2.png" alt = "second playlist">
-        <img src = "images/playlist3.png" alt = "third playlist">
-        <img src = "images/playlist4.png" alt = "fourth playlist">
-        <img src = "images/playlist5.png" alt = "fifth playlist">
-        <img src = "images/playlist6.png" alt = "sixth playlist">
-        <img src = "images/playlist7.png" alt = "seventh playlist">
-        <img src = "images/playlist8.png" alt = "eighth playlist">
-        <img src = "images/playlist9.png" alt = "ninth playlist">
+
+        <a href="images/playlist1.png" target="_blank" data-lightbox="playlist" >
+            <img src="images/playlist1.png" alt="first playlist">
+        </a>
+
+        <!-- <a href = "images/playlist2.png" target = "_blank" data-lightbox= "playlist" data-title = "Lost: Lauren Snerson 2022" data-alt = "Lost">
+            <img src = "images/playlist2.png" alt = "second playlist">
+        </a> -->
+
     </div>
-
-
+    <script src = "dist/js/lightbox-plus-jquery.js">
+    </script>
+    <script>
+        lightbox.option({
+        'resizeDuration': 20,
+        'wrapAround': true
+        })
+    </script>
 
 </body>
 </html>
